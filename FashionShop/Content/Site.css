@@ -1,0 +1,311 @@
+﻿/** Main styles **/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    float: left;
+    width: 100%;
+    height: 91%;
+}
+
+.padd {
+    float: left;
+    margin-bottom: 20px;
+}
+
+body {
+    margin-top: 50px;
+}
+
+/** Layout **/
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    float: left;
+    background-color: #f2f2f2;
+}
+
+footer {
+    padding-top: 30px;
+    float: left;
+    width: 100%;
+    height: 80px;
+    background-color: #1d1e22;
+}
+
+.bg-col {
+    background-color: #1d1e22;
+}
+
+.navbar-nav li a,
+.navbar-brand a {
+    color: white;
+    transition: all.3s ease;
+}
+
+    .navbar-nav li a:hover,
+    .navbar-nav li a:active {
+        background-color: #1d1e22;
+        color: #6689FF;
+    }
+
+.main-hrefs:active {
+    background-color: #1d1e22;
+    color: #dfc017;
+}
+
+.menu {
+    border: 1px solid #30303c;
+    background-color: #25252D;
+    padding: 3px 8px 3px 8px;
+}
+
+    .menu img {
+        width: 25px;
+        height: 25px;
+    }
+
+.logo {
+    font-size: 1.8em;
+    float: left;
+    color: #6689FF;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+
+    .logo:hover {
+        color: #6689FF;
+    }
+
+.foot-logo {
+    font-style: italic;
+    color: white;
+}
+
+    .foot-logo:first-letter {
+        rotation: 20deg;
+        color: #dfc017;
+    }
+
+.footer-txt {
+    text-align: center;
+    color: white;
+}
+
+.col-xs-12 {
+    margin-bottom: 10px;
+}
+
+.col-xs-10 {
+    margin-bottom: 10px;
+}
+
+.clear {
+    float: left;
+    clear: both;
+}
+
+/** Index (main page) **/
+.carousel-caption {
+    top: 40%;
+    color: beige;
+    text-shadow: 1px 1px 2px black;
+    font-size: 2.85em;
+}
+
+.head-pos {
+    text-align: center;
+    font-weight: 400;
+    color: #25252D;
+}
+
+.pos-cart {
+    float: right;
+    margin-right: 30px;
+    margin-top: 0px;
+    width: 35px;
+    height: 35px;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+}
+
+    .item > img {
+        width: 100%;
+    }
+
+.text {
+    text-indent: 1.5em;
+    font-size: 1.2em;
+}
+
+.contact-box {
+    border-color: #808080;
+}
+
+.catalog-menu {
+    width: 100%;
+    height: 50px;
+    padding: 6px;
+    background-color: #1d1e22;
+}
+
+.back {
+    background-color: silver;
+}
+
+
+
+.element > span {
+    float: left;
+    clear: both;
+    margin-bottom: 5px;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.message-area {
+    min-height: 100px;
+}
+
+.btn-send-message {
+    text-align: center;
+}
+
+    .btn-send-message input {
+        background-color: #fff;
+        border: 1px solid #808080;
+        border-radius: 4px;
+        padding: 7px 20px 7px 20px;
+        transition: all 0.6s ease;
+    }
+
+        .btn-send-message input:hover {
+            background-color: #25252D;
+            border-color: #25252D;
+            color: #fff;
+            transition: all 0.6s ease;
+        }
+
+.block-contacts {
+    background-color: #fff;
+    border: 1px solid silver;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    transition: all 0.9s ease;
+}
+
+    .block-contacts:hover,
+    .shadow-block:hover {
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        transition: all 0.9s ease;
+    }
+
+.shadow-block {
+    transition: all 0.6s ease;
+}
+
+.remember-me input[type = "checkbox"] {
+    float: left;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.remember-me {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+.contact-text {
+    color: #333;
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/** Error **/
+
+.img-smile {
+    width: 40%;
+    height: 40%;
+    float: left;
+    margin-left: 30%;
+    clear: both;
+}
+
+/** Adaptility **/
+@media(min-width: 1900px) and (max-width: 2700px) {
+    .carousel-caption h3,
+    .carousel-caption h2 {
+        font-size: 1.2em;
+    }
+    .element {
+        margin-left: 6.4%;
+        margin-bottom: 15px;
+        padding-top: 5px;
+        height: 150px;
+        background-color: white;
+    }
+}
+
+@media(min-width: 1150px) and (max-width: 1599px) {
+    .carousel-caption {
+        top: 40%;
+    }
+    .element {
+        margin-left: 6.4%;
+        margin-bottom: 15px;
+        padding-top: 5px;
+        height: 150px;
+        background-color: white;
+    }
+}
+
+@media(min-width: 996px) and (max-width: 1149px) {
+    .element {
+        margin-left: 6.4%;
+        margin-bottom: 15px;
+        padding-top: 5px;
+        height: 150px;
+        background-color: white;
+    }
+}
+
+@media(min-width: 700px) and (max-width: 995px) {
+    .element {
+        margin-left: 5.4%;
+        margin-bottom: 15px;
+        padding-top: 5px;
+        height: 150px;
+        background-color: white;
+    }
+}
+
+@media(min-width: 700px) and (max-width: 1149px) {
+    .carousel-caption {
+        top: 30%;
+    }
+
+    
+}
+
+@media(max-width: 699px) {
+    #carousel {
+        display: none;
+    }
+    .element {
+        margin-bottom: 15px;
+        padding-top: 5px;
+        height: 150px;
+        background-color: white;
+    }
+}

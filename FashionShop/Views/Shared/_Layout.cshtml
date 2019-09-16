@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/Content/Images/Icons/logo.png" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar bg-col container-fluid navbar-expand-md navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle menu" data-toggle="collapse" data-target=".navbar-collapse">
+                    <img src="~/Content/Images/Icons/menu.png" />
+                </button>
+                @Html.ActionLink("InTouch", "Index", "Home", new { area = "" }, new { @class = "navbar-brand logo" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("ГАВНАЯ", "Index", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        @RenderBody()
+    </div>
+    <footer>
+        <p class="footer-txt">&copy; @DateTime.Now.Year – все права защищены <span class="foot-logo">InTouch</span></p>
+    </footer>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    <script src='@Url.Content("~/Scripts/jquery.unobtrusive-ajax.js")'></script>
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
