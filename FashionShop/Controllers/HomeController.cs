@@ -20,7 +20,7 @@ namespace FashionShop.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-
+            ViewBag.Chsnge = "mcmcmmcmc";
             return View();
         }
     }
